@@ -17,6 +17,12 @@ object KUtils {
     }
     inline fun <reified T> tryCatch(block: () -> T, defaultValue: T): T = tryCatchOrNull(block, defaultValue)!!
 
+    // Ext
+    val String.decode64: String get() = decode64(this)
+    val String.encode64: String get() = encode64(this)
+    val String.decodeSafe64: String get() = decodeSafe64(this)
+    val String.encodeSafe64: String get() = encodeSafe64(this)
+
     @JvmStatic
     fun decode64(text: String) = tryCatchOrNull<String>(block = {text.base64Decoded}, "") ?: ""
 
