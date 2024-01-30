@@ -1,7 +1,7 @@
 package kmp.kutils
 
-import com.eygraber.uri.Uri
-import com.eygraber.uri.Url
+import kmp.kutils.uri.Uri
+import kmp.kutils.uri.Url
 
 class KUrl(uri: Uri) : Url(uri)
 

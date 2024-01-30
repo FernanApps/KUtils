@@ -1,9 +1,9 @@
 package kmp.kutils
 
-import saschpe.kase64.base64Decoded
-import saschpe.kase64.base64Encoded
-import saschpe.kase64.base64UrlDecoded
-import saschpe.kase64.base64UrlEncoded
+import kmp.kutils.kase64.base64Decoded
+import kmp.kutils.kase64.base64Encoded
+import kmp.kutils.kase64.base64UrlDecoded
+import kmp.kutils.kase64.base64UrlEncoded
 import kotlin.jvm.JvmStatic
 
 

@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package com.eygraber.uri.uris
+package kmp.kutils.uri.uris
 
-import com.eygraber.uri.Uri
-import com.eygraber.uri.parts.Part
+import kmp.kutils.uri.Uri
+import kmp.kutils.uri.parts.Part
 
 internal class OpaqueUri internal constructor(
-  override val scheme: String?,
-  private val ssp: Part,
-  _fragmentPart: Part?
+    override val scheme: String?,
+    private val ssp: Part,
+    _fragmentPart: Part?
 ) : Uri {
   private val fragmentPart: Part = _fragmentPart ?: Part.NULL
 

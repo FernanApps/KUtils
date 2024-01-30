@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package com.eygraber.uri
+package kmp.kutils.uri
 
-import com.eygraber.uri.parts.Part
-import com.eygraber.uri.parts.PathPart
-import com.eygraber.uri.uris.HierarchicalUri
-import com.eygraber.uri.uris.OpaqueUri
-import com.eygraber.uri.uris.StringUri
+import kmp.kutils.uri.parts.Part
+import kmp.kutils.uri.parts.PathPart
+import kmp.kutils.uri.uris.HierarchicalUri
+import kmp.kutils.uri.uris.OpaqueUri
+import kmp.kutils.uri.uris.StringUri
 
 public interface Uri : Comparable<Uri> {
   /**
@@ -251,7 +251,7 @@ public interface Uri : Comparable<Uri> {
 
     val query: String = encodedQuery ?: return emptyList()
     val encodedKey: String = try {
-      UriCodec.encode(key)
+        UriCodec.encode(key)
     }
     catch(e: Exception) {
       throw AssertionError(e)
@@ -324,7 +324,7 @@ public interface Uri : Comparable<Uri> {
         }
         else {
           val encodedValue = query.substring(separator + 1, end)
-          UriCodec.decode(encodedValue, convertPlus = true, throwOnFailure = false)
+            UriCodec.decode(encodedValue, convertPlus = true, throwOnFailure = false)
         }
       }
 
@@ -382,7 +382,7 @@ public interface Uri : Comparable<Uri> {
   /**
    * Constructs a new builder, copying the attributes from this Uri.
    */
-  public fun buildUpon(): com.eygraber.uri.Builder
+  public fun buildUpon(): kmp.kutils.uri.Builder
 
   /**
    * Helper class for building or manipulating URI references. Not safe for
@@ -404,7 +404,7 @@ public interface Uri : Comparable<Uri> {
    *
    * Use [Uri.buildUpon] to obtain a builder representing an existing URI.
    */
-  public class Builder : com.eygraber.uri.Builder {
+  public class Builder : kmp.kutils.uri.Builder {
     private var scheme: String? = null
     private var opaquePart: Part? = null
     private var authority: Part? = null

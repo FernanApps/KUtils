@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.eygraber.uri
+package kmp.kutils.uri
 
 /**
  * Exception thrown to indicate that a string could not be parsed as a URI reference.

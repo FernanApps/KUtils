@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package saschpe.kase64
+package kmp.kutils.kase64
 
 /**
  * Base64 encoding scheme

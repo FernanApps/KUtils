@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package com.eygraber.uri.parts
+package kmp.kutils.uri.parts
 
-import com.eygraber.uri.NotCachedHolder
-import com.eygraber.uri.PathSegments
-import com.eygraber.uri.PathSegmentsBuilder
-import com.eygraber.uri.UriCodec
+import kmp.kutils.uri.NotCachedHolder
+import kmp.kutils.uri.PathSegments
+import kmp.kutils.uri.PathSegmentsBuilder
+import kmp.kutils.uri.UriCodec
 
 /**
  * Immutable wrapper of encoded and decoded versions of a path part. Lazily
@@ -69,8 +69,8 @@ internal class PathPart internal constructor(encoded: String?, decoded: String?)
     val EMPTY = PathPart("", "")
 
     fun appendEncodedSegment(
-      oldPart: PathPart?,
-      newSegment: String
+        oldPart: PathPart?,
+        newSegment: String
     ): PathPart {
       // If there is no old path, should we make the new path relative
       // or absolute? I pick absolute.

@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package com.eygraber.uri.uris
+package kmp.kutils.uri.uris
 
-import com.eygraber.uri.Uri
-import com.eygraber.uri.parts.Part
-import com.eygraber.uri.parts.PathPart
+import kmp.kutils.uri.Uri
+import kmp.kutils.uri.parts.Part
+import kmp.kutils.uri.parts.PathPart
 
 internal class HierarchicalUri internal constructor(
-  override val scheme: String?,
-  _authorityPart: Part?,
-  _pathPart: PathPart?,
-  _queryPart: Part?,
-  _fragmentPart: Part?
+    override val scheme: String?,
+    _authorityPart: Part?,
+    _pathPart: PathPart?,
+    _queryPart: Part?,
+    _fragmentPart: Part?
 ) : AbstractHierarchicalUri() {
   private val authorityPart = Part.nonNull(_authorityPart)
   private val pathPart = _pathPart ?: PathPart.NULL

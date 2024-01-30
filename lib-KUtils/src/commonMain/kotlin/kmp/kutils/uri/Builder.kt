@@ -1,4 +1,4 @@
-package com.eygraber.uri
+package kmp.kutils.uri
 
 public interface Builder {
   /**

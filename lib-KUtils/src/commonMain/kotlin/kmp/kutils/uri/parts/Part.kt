@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package com.eygraber.uri.parts
+package kmp.kutils.uri.parts
 
-import com.eygraber.uri.NotCachedHolder
-import com.eygraber.uri.UriCodec
+import kmp.kutils.uri.NotCachedHolder
+import kmp.kutils.uri.UriCodec
 
 /**
  * Immutable wrapper of encoded and decoded versions of a URI part. Lazily

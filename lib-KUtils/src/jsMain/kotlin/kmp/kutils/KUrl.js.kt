@@ -1,6 +1,6 @@
 package kmp.kutils
 
-import com.eygraber.uri.Url
+import kmp.kutils.uri.Url
 import org.w3c.dom.url.URL
 
 public fun Url.toURL(): URL = URL(toString())

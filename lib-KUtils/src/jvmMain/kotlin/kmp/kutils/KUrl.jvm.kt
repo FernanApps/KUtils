@@ -1,10 +1,10 @@
 package kmp.kutils
 
-import com.eygraber.uri.Uri
-import com.eygraber.uri.Url
-import com.eygraber.uri.parts.Part
-import com.eygraber.uri.parts.PathPart
-import com.eygraber.uri.uris.HierarchicalUri
+import kmp.kutils.uri.Uri
+import kmp.kutils.uri.Url
+import kmp.kutils.uri.parts.Part
+import kmp.kutils.uri.parts.PathPart
+import kmp.kutils.uri.uris.HierarchicalUri
 import java.io.File
 import java.net.URI
 

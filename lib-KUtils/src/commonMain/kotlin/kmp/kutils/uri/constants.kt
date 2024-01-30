@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.eygraber.uri
+package kmp.kutils.uri
 
 /** Index of a component which was not found.  */
 internal const val NOT_FOUND = -1

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.eygraber.uri
+package kmp.kutils.uri
 
 /**
  * Wrapper for path segment array.

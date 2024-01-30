@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package com.eygraber.uri.uris
+package kmp.kutils.uri.uris
 
-import com.eygraber.uri.NOT_FOUND
-import com.eygraber.uri.Uri
-import com.eygraber.uri.parts.Part
-import com.eygraber.uri.parts.PathPart
+import kmp.kutils.uri.NOT_FOUND
+import kmp.kutils.uri.Uri
+import kmp.kutils.uri.parts.Part
+import kmp.kutils.uri.parts.PathPart
 
 /**
  * An implementation which wraps a String URI. This URI can be opaque or
